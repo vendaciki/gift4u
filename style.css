@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    background-image: url(background.webp);
+}
+
+section {
+    position: relative;
+    overflow: hidden;
+    margin: 5px;
+    text-align: center;
+    width: 60%;
+    cursor: pointer;
+}
+
+img {
+    transition: 0.7s;
+    vertical-align: middle;
+}
+  
+section:hover img {
+    transform: scale(1.1);
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+
+
+
+
+
+/***************************************/
+/*               SLIDE                 */
+/***************************************/
+
+.slider {
+    position: relative;
+    margin: 0 auto 20px;
+    width: 50%;
+}
+  
+.mySlides {
+    display: none;
+    text-align: center;
+}
+  
+.cursor {
+    cursor: pointer;
+}
+  
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    background-color: rgba(90, 88, 88, 0.6);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+  
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.mySlides img {
+    height: 800px;
+    object-fit: contain;
+}
+
+.obrazky {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.obrazky img {
+    width: 45%;
+}
+
+
+
+
+
+
+
+@media screen and (min-width:300px) and (max-width:600px) {
+
+    section {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .slider {
+        width: 100%;
+    }
+
+    .mySlides img {
+        height: auto;
+    }
+
+    .prev, .next {
+        padding: 10px;
+    }
+
+
+}
